@@ -24,7 +24,7 @@ class GetRequester
           "#{name}"=>"#{peep}",
           "#{job}"=>"#{title}"
         }
-      end.file
+      end
     end
   end
   
