@@ -20,7 +20,7 @@ class GetRequester
     usables = JSON.parse(self.get_response_body)
     usables.collect do |usable|
       usable.each do |name, peep, job, title|
-        file = {"#{name}"=>"#{peep}", "#{job}"=>"#{title}"};
+        file = {"#{name}"=>"#{peep}", "#{job}"=>"#{title}"}
       end
     end
   end
