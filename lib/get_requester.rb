@@ -18,8 +18,8 @@ class GetRequester
   
   def parse_json
     usables = JSON.parse(self.get_response_body)
-    usables.collect do |peep, name, job, title|
-      
+    usables.collect do |name, peep, job, title|
+      usable[{"#{name}"=>"#{peep}", "#{job}"=>"#{title}"}]
     end
   end
   
